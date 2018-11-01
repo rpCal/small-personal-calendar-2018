@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calligraffitti', cursive;
+}
 .kalendarz{
-    height: 4843px;
-    width: 3425px;
-    margin: 100px auto;
+    height: 1587px;
+    width: 1123px;
+    margin: 0px auto;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -13,6 +21,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .tytul{
     height: 45%;
     font-size: 25px;
@@ -20,16 +29,27 @@
     line-height: 50px;
     border: 1px solid black;
 }
+
+.tytul img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 758px;
+}
+
 .dni_tyg {
     display: flex;
     margin-left: 5%;
     height: 20%;
     width: 95%;
-  }
+}
+
 .dni_tyg div {
     border: 1px solid black;
     width: calc(100% / 7);
     text-align: center;
+    line-height: 38px;
+    font-size: 22px;
 }
 
 .osoba {
@@ -46,7 +66,9 @@
     text-align: center;
     height: 100%;
     line-height: 200%;
-
+    background: url('./images/icon_names.png') no-repeat center center;
+    background-size: 90%;
+    text-indent: -9999px;
 }
 
 .zegar,
@@ -56,9 +78,31 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    height: 5%;
+    height: calc(100% / 4);
     
 }
+
+.zegar .czynnosci{
+    background: url('./images/icon_clock.png') no-repeat center center;
+    background-size: 40px;
+    text-indent: -9999px;
+}
+.silownia .czynnosci{
+    background: url('./images/icon_muscle.png') no-repeat center center;
+    background-size: 40px;
+    text-indent: -9999px;
+}
+.jedzenie .czynnosci{
+    background: url('./images/icon_meat.png') no-repeat center center;
+    background-size: 40px;
+    text-indent: -9999px;
+}
+.nauka .czynnosci{
+    background: url('./images/icon_learn.png') no-repeat center center;
+    background-size: 40px;
+    text-indent: -9999px;
+}
+
 
 .zegar {
   border-top: 1px solid black;
@@ -70,10 +114,10 @@
 }
 
 .komorka {
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  width: calc(100% / 14);
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: calc(100% / 14);
 }
 
 .czynnosci {
@@ -85,10 +129,34 @@
 }
 .legenda {
     height: 5%;
+    background: url('./images/image_of_legend.png') no-repeat center center;
+    background-size: 70% 100%;
+    text-indent: -9999px;
 }
 .tytul{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.tydzien {
+    height: calc( (100% - 15% - 5%) / 5);
+    border-bottom: 3px solid;
+    position: relative;
+}
+.dni-tygodnia-numery-wrapper{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 5%;
+    width: 95%;
+}
+.dni-tygodnia-numery-wrapper > div{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    font-size: 22px;
+    padding-top: 3px;
+    padding-left: 3px;
 }
