@@ -160,3 +160,10 @@ html{
     padding-top: 3px;
     padding-left: 3px;
 }
+
+
+/* CSS hack - use background image on print :: only chrome and safari  */
+@media print
+{
+    * {-webkit-print-color-adjust:exact;}
+}
