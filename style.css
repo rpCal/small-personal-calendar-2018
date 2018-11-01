@@ -1,0 +1,94 @@
+.kalendarz{
+    height: 4843px;
+    width: 3425px;
+    margin: 100px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.tytul{
+    height: 45%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+}
+.dni_tyg {
+    display: flex;
+    margin-left: 5%;
+    height: 20%;
+    width: 95%;
+  }
+.dni_tyg div {
+    border: 1px solid black;
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.osoba {
+    display: flex;
+    margin-left: 5%;
+    height: 40%;
+    width: 95%;
+   
+}
+
+.osoba div {
+    border: 1px solid black;
+    width: calc(100% / 7);
+    text-align: center;
+    height: 100%;
+    line-height: 200%;
+
+}
+
+.zegar,
+.silownia,
+.jedzenie,
+.nauka {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 5%;
+    
+}
+
+.zegar {
+  border-top: 1px solid black;
+}
+
+.komorki {
+  display: flex;
+  width: 95%;
+}
+
+.komorka {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  width: calc(100% / 14);
+}
+
+.czynnosci {
+  display: flex;
+  width: 5%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  
+}
+.legenda {
+    height: 5%;
+}
+.tytul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
